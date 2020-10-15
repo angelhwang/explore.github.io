@@ -1,4 +1,8 @@
 /* Base */
+iframe {
+    border: none;
+}
+
 body {
   line-height: 1.7;
   color: gray;

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en_US" data-vue-meta-server-rendered="">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175024333-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-175024333-1');
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -2772,9 +2782,7 @@ to {
 }
 </style>
 
-<script type="application/json" id="global-config-json">{"CBSTR":"cb=264615658","ASSETSURL":"https:\/\/a5.behance.net\/0aff073de370f092b8c61f80a772d776dba604ee\/"}</script>
 
-<script type="text/javascript" nonce="">!function(){"use strict";function n(n){return void 0!==n}function t(n){return"[object Event]"===String(n)?"Event#target.src="+(n.target&&n.target.src):n}function e(n){return n.replace(/(access_?token)=[a-zA-Z0-9=+\/.\-_]+/gi,"$1=XXX")}function r(r,o,i,c,u){var s={};return r&&(r=String("object"==typeof r?t(r):r),r=e(r)),o&&(s.file=String(o).replace(/#.+$/,"")),n(i)&&(s.line=Number(i)),n(c)&&(s.column=Number(c)),u&&u.stack&&(s.stack=e(String(u.stack))),{level:"ERROR",channel:"js_errors",message:r,context:s}}function o(n){for(var t=[],e=0;e<n.length;e++)t[e]="logs[]="+encodeURIComponent(JSON.stringify(n[e]));return t.join("&")}function i(n){var t=new XMLHttpRequest;t.open("POST","/log"),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.send(o(n))}!function(n,t,e){function r(n){i.push(n),c||(c=!0,setTimeout(function(){e(i),c=!1,i=[]},0))}var o={},i=[],c=!1,u=n.onerror;n.onerror=function(){var n=t.apply(null,arguments),e=JSON.stringify(n);o[e]||(o[e]=!0,r(n)),u&&u.apply(this,arguments)}}(window,r,i)}();</script>
   </head>
 
   <body>
@@ -2792,18 +2800,45 @@ to {
             <div class="Tooltip-mask-pQU"></div>
         </div></div></div></div>
 
-        <!--follow button -->
+            <!-- side bar buttons -->
+            <script>
+            function setColor(e, btn, color) {
+              var target = e.target,
+                  count = +target.dataset.count;
+
+               target.style.backgroundColor = count === 1 ? "#2b57ff" : '#FFFFFF';
+               target.dataset.count = count === 1 ? 0 : 1;
+            }
+            </script>
+
+
+            <!--follow button -->
             <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./follow.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
+                <span><!--button tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools"-->
+                    <!--img src="./follow.png" class="Tools-adobeToolIcon-y6z"-->
+                    <input type="button" id="button" value="Follow" style="color:black"
+                    onclick="setColor(event, 'button', '#101010')"; data-count="1"
+                    class="Tools-iconWrapper-27B .qa-adobeTools"/>
+                <!--/button-->
                 </span>
             </div>
-            <div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Follow</div>
+            <!--div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Follow</div-->
+
+            <!-- appreciation button -->
+            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
+                <span><!--button tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools"-->
+                    <!--img src="./follow.png" class="Tools-adobeToolIcon-y6z"-->
+                    <input type="button" id="button" value="Like" style="color:black"
+                    onclick="setColor(event, 'button', '#101010')"; data-count="1"
+                    class="Tools-iconWrapper-27B .qa-adobeTools"/>
+                <!--/button-->
+                </span>
+            </div>
+            <!--div class="Project-actionName-1sX">Appreciate</div-->
 
             <!-- tools button -->
             <div data-ut="sidebar-tools" class="Tooltip-wrapper-2py Tooltip-responsive-1yQ Project-sidebarTools-1Ye" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
+                <span><a tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
                     <img src="./illustrator.png" class="Tools-adobeToolIcon-y6z">
                     </a>
                 </span>
@@ -2814,26 +2849,10 @@ to {
                         </div>
                     </div>
             </div>
-            <div class="Project-actionName-1sX Project-toolsTitle-1An"> Tools </div>
+            <!--div class="Project-actionName-1sX Project-toolsTitle-1An"> Tools </div-->
 
-            <!-- save button -->
-            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./save.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-            </div>
-            <div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Save</div>
-
-            <!-- appreciation button -->
-            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./appreciation.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-            </div>
-            <div class="Project-actionName-1sX">Appreciate</div>
-  </div></div>
+        </div>
+    </div>
 
   <div class="Project-main-2co">
      <div class="Project-topElement-bnH qa-project-owners e2e-Project-owners Project-fullPageOwner-2B0">
@@ -2893,7 +2912,7 @@ to {
         <div class="project-item-lightbox__caption js-lightbox-caption qa-lightbox-caption" data-id="604302171"></div>
     </script>
     </div><div>
-        
+
     </div><div data-ut="image" class="ImageElement-root-33P ImageElement-loaded-1V2"><img src="./1001_01_files/5f26a1105249879.5f74bfc81e583.jpg" srcset="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f26a1105249879.5f74bfc81e583.jpg 600w, https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5f26a1105249879.5f74bfc81e583.jpg 1200w, https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5f26a1105249879.5f74bfc81e583.jpg 1400w, https://mir-s3-cdn-cf.behance.net/project_modules/fs/5f26a1105249879.5f74bfc81e583.jpg 1920w, https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5f26a1105249879.5f74bfc81e583.jpg 2800w" sizes="(max-width: 1400px) 100vw, 1400px" alt="Image may contain: person, clothing and human face" class="ImageElement-image-2K6 ImageElement-blockPointerEvents-ooR"><!----></div></div><!----></div></div><div class="spacer module-separator"><div class="divider"></div></div></div><div class="Project-projectModuleContainer-2q2 Preview__project--topMargin e2e-Project-module-container"><div class="Module-module-35g root"><div data-ut="root" class="js-project-module js-project-module--image project-module module image e2e-Project-modules-image project-module-image image-full project-module-image-full Image-root-1tO"><div class="js-project-lightbox-link e2e-Project-modules-image-lightbox-link project-module-image-inner-wrap lightbox-link"><div><!----><div class="v-portal" style="display:none;"></div><div class="v-portal" style="display:none;"></div><!----><div class="v-portal" style="display:none;"></div><!----></div><div><script type="text/html" class="js-lightbox-slide-content">
       <div class="project-lightbox-image-container e2e-Project-lightbox-container">
         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b775c9105249879.5f74c1eb2ca0c.jpg" srcset="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b775c9105249879.5f74c1eb2ca0c.jpg 600w,https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b775c9105249879.5f74c1eb2ca0c.jpg 1200w,https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b775c9105249879.5f74c1eb2ca0c.jpg 1400w,https://mir-s3-cdn-cf.behance.net/project_modules/fs/b775c9105249879.5f74c1eb2ca0c.jpg 1920w,https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b775c9105249879.5f74c1eb2ca0c.jpg 2800w," sizes="(max-width: 2800px) 100vw, 2800px">
@@ -4450,6 +4469,5 @@ to {
       </div>
     </script>
     </div></div></div>
-
 
     </body></html>

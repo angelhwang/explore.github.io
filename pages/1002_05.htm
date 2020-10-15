@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en_US" data-vue-meta-server-rendered="">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175024333-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-175024333-1');
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -31,8 +42,6 @@
     <meta property="og:type" content=":project">
     <meta property="fb:app_id" content="229702757350">
 
-    <link rel="shortcut icon" href="https://a5.behance.net/a369df36bbb86bd0a2058178d160407c9ca69579/img/site/favicon.ico?cb=264615658">
-    <link rel="apple-touch-icon" href="https://a5.behance.net/a369df36bbb86bd0a2058178d160407c9ca69579/img/site/apple-touch-icon.png?cb=264615658">
 
 
     <link rel="preconnect" href="https://mir-cdn.behance.net/"><link rel="preconnect" href="https://mir-s3-cdn-cf.behance.net/"><link rel="preconnect" href="https://c.evidon.com/"><link rel="image_src" href="https://mir-s3-cdn-cf.behance.net/projects/202/2e99e870869979.Y3JvcCwxMTkyLDkzMywxMDAsMA.png"><link rel="canonical" href="https://www.behance.net/gallery/70869979/Kaunas-2022-European-Capital-of-Culture"><link rel="stylesheet" href="./1002_05_files/networki.css" type="text/css">
@@ -2795,9 +2804,7 @@ to {
 }
 </style>
 
-<script type="application/json" id="global-config-json">{"CBSTR":"cb=264615658","ASSETSURL":"https:\/\/a5.behance.net\/0aff073de370f092b8c61f80a772d776dba604ee\/"}</script>
 
-<script type="text/javascript" nonce="">!function(){"use strict";function n(n){return void 0!==n}function t(n){return"[object Event]"===String(n)?"Event#target.src="+(n.target&&n.target.src):n}function e(n){return n.replace(/(access_?token)=[a-zA-Z0-9=+\/.\-_]+/gi,"$1=XXX")}function r(r,o,i,c,u){var s={};return r&&(r=String("object"==typeof r?t(r):r),r=e(r)),o&&(s.file=String(o).replace(/#.+$/,"")),n(i)&&(s.line=Number(i)),n(c)&&(s.column=Number(c)),u&&u.stack&&(s.stack=e(String(u.stack))),{level:"ERROR",channel:"js_errors",message:r,context:s}}function o(n){for(var t=[],e=0;e<n.length;e++)t[e]="logs[]="+encodeURIComponent(JSON.stringify(n[e]));return t.join("&")}function i(n){var t=new XMLHttpRequest;t.open("POST","/log"),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.send(o(n))}!function(n,t,e){function r(n){i.push(n),c||(c=!0,setTimeout(function(){e(i),c=!1,i=[]},0))}var o={},i=[],c=!1,u=n.onerror;n.onerror=function(){var n=t.apply(null,arguments),e=JSON.stringify(n);o[e]||(o[e]=!0,r(n)),u&&u.apply(this,arguments)}}(window,r,i)}();</script>
   </head>
 
   <body>
@@ -2815,47 +2822,58 @@ to {
             <div class="Tooltip-mask-pQU"></div>
         </div></div></div></div>
 
+        <!-- side bar buttons -->
+        <script>
+        function setColor(e, btn, color) {
+          var target = e.target,
+              count = +target.dataset.count;
+
+           target.style.backgroundColor = count === 1 ? "#2b57ff" : '#FFFFFF';
+           target.dataset.count = count === 1 ? 0 : 1;
+        }
+        </script>
+
+
         <!--follow button -->
-            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./follow.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-            </div>
-            <div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Follow</div>
+        <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
+            <span><!--button tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools"-->
+                <!--img src="./follow.png" class="Tools-adobeToolIcon-y6z"-->
+                <input type="button" id="button" value="Follow" style="color:black"
+                onclick="setColor(event, 'button', '#101010')"; data-count="1"
+                class="Tools-iconWrapper-27B .qa-adobeTools"/>
+            <!--/button-->
+            </span>
+        </div>
+        <!--div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Follow</div-->
 
-            <!-- tools button -->
-            <div data-ut="sidebar-tools" class="Tooltip-wrapper-2py Tooltip-responsive-1yQ Project-sidebarTools-1Ye" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./illustrator.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-                    <div class="Tooltip-container-2aL Tooltip-position-center-ThM Tooltip-right-2ui" style="cursor:initial;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;display:none;">
-                        <div class="Tooltip-triangleContainer-AaB" style="right:2px;">
-                            <div class="Tooltip-triangle-3EI"></div>
-                            <div class="Tooltip-mask-pQU"></div>
-                        </div>
+        <!-- appreciation button -->
+        <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
+            <span><!--button tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools"-->
+                <!--img src="./follow.png" class="Tools-adobeToolIcon-y6z"-->
+                <input type="button" id="button" value="Like" style="color:black"
+                onclick="setColor(event, 'button', '#101010')"; data-count="1"
+                class="Tools-iconWrapper-27B .qa-adobeTools"/>
+            <!--/button-->
+            </span>
+        </div>
+        <!--div class="Project-actionName-1sX">Appreciate</div-->
+
+        <!-- tools button -->
+        <div data-ut="sidebar-tools" class="Tooltip-wrapper-2py Tooltip-responsive-1yQ Project-sidebarTools-1Ye" style="cursor:pointer;">
+            <span><a tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
+                <img src="./illustrator.png" class="Tools-adobeToolIcon-y6z">
+                </a>
+            </span>
+                <div class="Tooltip-container-2aL Tooltip-position-center-ThM Tooltip-right-2ui" style="cursor:initial;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;display:none;">
+                    <div class="Tooltip-triangleContainer-AaB" style="right:2px;">
+                        <div class="Tooltip-triangle-3EI"></div>
+                        <div class="Tooltip-mask-pQU"></div>
                     </div>
-            </div>
-            <div class="Project-actionName-1sX Project-toolsTitle-1An"> Tools </div>
+                </div>
+        </div>
+        <!--div class="Project-actionName-1sX Project-toolsTitle-1An"> Tools </div-->
 
-            <!-- save button -->
-            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./save.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-            </div>
-            <div class="Project-actionName-1sX Project-moodboardTitle-2Ex">Save</div>
 
-            <!-- appreciation button -->
-            <div class="Tooltip-wrapper-2py Project-tooltip-CYu Project-collection-1kA" style="cursor:pointer;">
-                <span><a href="https://www.adobe.com/products/illustrator.html?promoid=HZG8X32C&amp;mv=other" target="_blank" tabindex="0" class="Tools-iconWrapper-27B .qa-adobeTools">
-                    <img src="./appreciation.png" class="Tools-adobeToolIcon-y6z">
-                    </a>
-                </span>
-            </div>
-            <div class="Project-actionName-1sX">Appreciate</div>
   </div></div>
 
   <!-- title banner -->
